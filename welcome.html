@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="loginNuevo/css/welcome2.css">
+    <link rel="icon" href="loginNuevo/img/icon.png">
+
+</head>
+<body>
+
+    <section class="top-section">
+        <link href="loginNuevo/css/welcome2.css" rel="stylesheet" type="text/css">
+        <img src="loginNuevo/img/logo-new.png" class="img-logo" alt="">
+    </section>
+
+    <div class="top-section">
+    <!--Commit-->
+        
+    </div>
+
+
+    <div>
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="loginNuevo/img/cover.png" alt="">
+            <h1>¡Bienvenido!</h1>
+            <h3>¿Ya estas registrado en Corona-Analyst?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login</h1>
+            <form action="loginNuevo/login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contrasena">
+                <input type="submit" name="login-btn" class="btn" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="loginNuevo/img/cover.png" alt="">
+            <h1>¡Bienvenido!</h1>
+            <h3>¿No te has registrado?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Signup</h1>
+            <form action="loginNuevo/signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario">
+                <input type="email" name="user-email" class="input-box" placeholder="Email">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contrasena">
+                <input type="submit" name="signup-btn" class="btn" value="Signup">
+            </form>
+        </div>
+    </section>
+    </div>
+    <script src="loginNuevo/js/main.js"></script>
+
+</body>
+</html>
