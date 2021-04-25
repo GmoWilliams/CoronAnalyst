@@ -35,7 +35,11 @@ if(isset($_POST['login-btn'])) {
         }
         else {
           
-          echo "Error: Nombre de usuario o contrasenia invalida. Por favor regrese y vuelva a ingresar las credenciales";
+          //echo "Error: Nombre de usuario o contrasenia invalida. Por favor regrese y vuelva a ingresar las credenciales";
+          echo "<script>
+          alert('Error: Nombre de usuario o contrasenia invalida. Por favor regrese y vuelva a ingresar las credenciales');
+          window.location.href='../welcome.html';
+          </script>";
         }
       }
     }

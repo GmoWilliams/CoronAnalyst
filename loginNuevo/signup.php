@@ -14,7 +14,10 @@ if(isset($_POST['signup-btn'])) {
 
     $query = mysqli_query($db, "SELECT * FROM users WHERE username = '$username' or email = '$email'");
     if (mysqli_num_rows($query) > 0){
-      echo 'Username or email already exists!';
+    echo "<script>
+    alert('Username or email already exists!');
+    window.location.href='../welcome.html';
+    </script>";
     }
     else {
     
