@@ -22,6 +22,14 @@ body {
     font-size: 22px;
     box-shadow: 15px 15px 25px #a8a8a8;
     transition: box-shadow 0.5s;
+
+     
+}
+
+input[type=checkbox]{
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px;
 }
 
 .form input:focus {

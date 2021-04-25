@@ -2,7 +2,7 @@
 
 require_once 'source/db_connect.php';
 
-$db = mysqli_connect ("localhost", "root", "", "andres");
+//$db = mysqli_connect ("localhost", "root", "", "andres");
 
 if(isset($_POST['signup-btn'])) {
 

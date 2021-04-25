@@ -4,6 +4,8 @@ $username = 'root';
 $password = '';
 $dsn = 'mysql:host=localhost; dbname=andres';
 
+$db = mysqli_connect ("localhost", "root", "", "andres");
+
 try {
   // Php Data Objects
   $conn = new PDO($dsn, $username, $password);

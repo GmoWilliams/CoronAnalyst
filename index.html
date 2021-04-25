@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Corona-Analyst</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -76,7 +76,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="estadoC">Cuál es su estado civil?*</label>
+                                        <label for="estadoC">¿Cuál es su estado civil?*</label>
                                         <select name="estadoC" id="estadoC" class="form-control">
                                             <option value="" selected> </option>
                                             <option value="soltero">Soltero</option>
@@ -93,7 +93,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="estudios">Cuál es su nivel de estudios?* (Si eres estudiante
+                                        <label for="estudios">¿Cuál es su nivel de estudios?* (Si eres estudiante
                                             selecciona el que estás cursando)</label>
                                         <select name="estudios" id="estudios" class="form-control">
                                             <option value="" selected> </option>
@@ -112,7 +112,7 @@
                                 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="ocupacion">Cuál es su ocupación?*</label>
+                                        <label for="ocupacion">¿Cuál es su ocupación?*</label>
                                         <select name="ocupacion" id="ocupacion" class="form-control">
                                             <option value="" selected> </option>
                                             <option value="industrial">Sector Industrial</option>
@@ -143,7 +143,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="ingresos">Cuál es su ingreso económico mensual?*</label>
+                                        <label for="ingresos">¿Cuál es su ingreso económico mensual?*</label>
                                         <select name="ingresos" id="ingresos" class="form-control">
                                             <option value="" selected> </option>
                                             <option value="0">No percibo algún salario</option>
@@ -161,7 +161,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="estado">De qué estado de la república proviene?*</label>
+                                        <label for="estado">¿De qué estado de la república proviene?*</label>
                                         <select name="estado" id="estado" class="form-control">
                                             <option value="" selected> </option>
                                             <option value="AGS">Aguascalientes</option>
@@ -219,7 +219,7 @@
                             <div class="inner">
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="freq20">Qué tan seguido compraba en línea?</label>
+                                        <label for="freq20">¿Qué tan seguido compraba en línea?</label>
                                         <select name="freq20" id="freq20" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="1a5">1 a 5 veces al mes</option>
@@ -235,13 +235,23 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">Qué plataformas utilizaba para realizar compras en línea?</label>
+                                        <label for="none">¿Qué plataformas utilizaba para realizar compras en línea?</label>
                                     </div>
                                 </div>
                                 <table class="table">
                                     <tbody>
                                         <tr class="space-row">
+                                            <style>
+                                                 label {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                input[type=checkbox]{
+                                                    flex: none;
+                                                }
+                                            </style>
                                             <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="amazon" required>
+                                            
                                             <label for="amazon">Amazon</label><br>
                                             <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="mercadoLibre">
                                             <label for="mercadoLibre">Mercado Libre</label><br>
@@ -261,18 +271,11 @@
                                     </tbody>
                                 </table>
 
-                                <select name="cars" id="cars" multiple>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                  </select>
-
                                 <br>
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">Qué métodos de pago utilizaba para realizar compras en línea?</label>
+                                        <label for="none">¿Qué métodos de pago utilizaba para realizar compras en línea?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -304,7 +307,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">De cuáles de las siguientes categorías realizaba compras?</label>
+                                        <label for="none">¿De cuáles de las siguientes categorías realizaba compras?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -347,7 +350,7 @@
 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="compu20">Cuánto tiempo estima que se encontraba usando la computadora para actividades diarias?</label>
+                                        <label for="compu20">¿Cuánto tiempo estima que se encontraba usando la computadora para actividades diarias?</label>
                                         <select name="compu20" id="compu20" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="7hrsDia">7 horas o más al día</option>
@@ -375,7 +378,7 @@
                             <div class="inner">
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="freq21">Qué tan seguido compraba en línea?</label>
+                                        <label for="freq21">¿Qué tan seguido compraba en línea?</label>
                                         <select name="freq21" id="freq21" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="1a5">1 a 5 veces al mes</option>
@@ -391,7 +394,7 @@
                                 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">Qué plataformas utilizaba para realizar compras en línea?</label>
+                                        <label for="none">¿Qué plataformas utilizaba para realizar compras en línea?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -421,7 +424,7 @@
                                 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">Qué métodos de pago utilizaba para realizar compras en línea?</label>
+                                        <label for="none">¿Qué métodos de pago utilizaba para realizar compras en línea?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -453,7 +456,7 @@
                                 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">De cuáles de las siguientes categorías realizaba compras?</label>
+                                        <label for="none">¿De cuáles de las siguientes categorías realizaba compras?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -496,7 +499,7 @@
                                 
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="compu21">Cuánto tiempo estima que se encontraba usando la computadora para actividades
+                                        <label for="compu21">¿Cuánto tiempo estima que se encontraba usando la computadora para actividades
                                             diarias?</label>
                                         <select name="compu21" id="compu21" class="form-control" required>
                                             <option value="" selected> </option>
@@ -527,7 +530,7 @@
                                 <br>
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="medio21">Actualmente compras más seguido en físico o en línea?</label>
+                                        <label for="medio21">¿Actualmente compras más seguido en físico o en línea?</label>
                                         <select name="medio21" id="medio21" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="fisico">Físico</option>
@@ -553,7 +556,7 @@
                             <div class="inner">
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="sintomas">Desde que empezó la pandemia, ha presentado síntomas relacionados al COVID-19?</label>
+                                        <label for="sintomas">Desde que empezó la pandemia, ¿ha presentado síntomas relacionados al COVID-19?</label>
                                         <select name="sintomas" id="sintomas" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="Si">Sí</option>
@@ -567,7 +570,7 @@
                         
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">Usted sufre de alguna de las siguientes condiciones médicas?</label>
+                                        <label for="none">¿Usted sufre de alguna de las siguientes condiciones médicas?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -599,7 +602,7 @@
                         
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="none">A causa de la pandemia usted se ha sentido relacionado con algunas de las siguientes situaciones?</label>
+                                        <label for="none">¿A causa de la pandemia usted se ha sentido relacionado con algunas de las siguientes situaciones?</label>
                                     </div>
                                 </div>
                                 <table class="table">
@@ -628,7 +631,7 @@
                                 <br>
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label for="actFisica">Durante la pandemia ¿Cómo ha cambiado su actividad física?</label>
+                                        <label for="actFisica">¿Durante la pandemia ¿Cómo ha cambiado su actividad física?</label>
                                         <select name="actFisica" id="actFisica" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="aumento">Aumentó</option>
