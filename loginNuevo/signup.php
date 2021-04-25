@@ -1,6 +1,7 @@
 <?php
 
 require_once 'source/db_connect.php';
+session_start();
 
 $db = mysqli_connect ("localhost", "root", "", "pruebas");
 
