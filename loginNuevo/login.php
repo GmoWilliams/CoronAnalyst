@@ -2,7 +2,7 @@
 
 require_once 'source/session.php';
 require_once 'source/db_connect.php';
-
+$_SESSION_start();
 if(isset($_POST['login-btn'])) {
 
     $user = $_POST['user-name'];
