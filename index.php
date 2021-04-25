@@ -242,21 +242,21 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="amazon" required>
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="amazon" required>
                                             <labe for="amazon">Amazon</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="mercadoLibre">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="mercadoLibre">
                                             <labe for="mercadoLibre">Mercado Libre</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="fb">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="fb">
                                             <labe for="fb">Facebook Marketplace</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="alibaba">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="alibaba">
                                             <labe for="alibaba">Alibaba/Aliexpress</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="ebay">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="ebay">
                                             <labe for="ebay">eBay</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="eshop">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="eshop">
                                             <labe for="eshop">E-shop propia de cada marca (Nike, Supreme, Walmart, Liverpool, etc)</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="otros">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="plataforma20" name="plataforma20" class="form-control" value="No">
+                                            <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
@@ -274,23 +274,23 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="credito">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="credito">
                                             <labe for="credito">Tarjeta de Crédito</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="debito">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="debito">
                                             <labe for="debito">Tarjeta de Débito</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="paypal">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="paypal">
                                             <labe for="paypal">Paypal</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="mercadoPago">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="mercadoPago">
                                             <labe for="mercadoPago">Mercado Pago</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="efectivo">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="efectivo">
                                             <labe for="efectivo">Efectivo</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="transferencia">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="transferencia">
                                             <labe for="transferencia">Transferencia Electrónica</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="depositoTiendas">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="depositoTiendas">
                                             <labe for="depositoTiendas">Depósito en tiendas de conveniencia (Oxxo, 7Eleven, etc.)</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="Otro">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="Otro">
                                             <labe for="Otro">Otro</labe><br>
-                                            <input type="checkbox" id="pago20" name="pago20" class="form-control" value="No">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en internet</labe><br>
                                             </h3>
                                         </tr>
@@ -308,35 +308,35 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="credito">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="credito">
                                             <labe for="ropa">Ropa</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="comida">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="super">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="super">
                                             <labe for="super">Super a domicilio (víveres)</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="muebles">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="muebles">
                                             <labe for="muebles">Muebles y/o electrodomésticos</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="coleccionables">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="coleccionables">
                                             <labe for="coleccionables">Coleccionables</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="libros">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="libros">
                                             <labe for="libros">Libros (físicos o electrónicos)</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="computadoras">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="computadoras">
                                             <labe for="computadoras">Computadoras y/o electrónicos</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="herramienta">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="herramienta">
                                             <labe for="herramienta">Herramientas y ferretería</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="entretenimiento">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="entretenimiento">
                                             <labe for="entretenimiento">Entretenimiento (música, tv, videojuegos, juguetes, etc.)</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="programas">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="programas">
                                             <labe for="programas">Programas o aplicaciones</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="boletos">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="boletos">
                                             <labe for="boletos">Reservaciones y boletos</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="higiene">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="higiene">
                                             <labe for="higiene">Artículos de higiene</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="deportivos">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="deportivos">
                                             <labe for="deportivos">Artículos deportivos</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="otros">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="categoria20" name="categoria20" class="form-control" value="No">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
@@ -397,21 +397,21 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="amazon">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="amazon">
                                             <labe for="amazon">Amazon</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="mercadoLibre">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="mercadoLibre">
                                             <labe for="mercadoLibre">Mercado Libre</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="fb">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="fb">
                                             <labe for="fb">Facebook Marketplace</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="alibaba">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="alibaba">
                                             <labe for="alibaba">Alibaba/Aliexpress</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="ebay">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="ebay">
                                             <labe for="ebay">eBay</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="eshop">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="eshop">
                                             <labe for="eshop">E-shop propia de cada marca (Nike, Supreme, Walmart, Liverpool, etc)</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="otros">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21" class="form-control" value="No">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
@@ -429,23 +429,23 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="credito">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="credito">
                                             <labe for="credito">Tarjeta de Crédito</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="debito">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="debito">
                                             <labe for="debito">Tarjeta de Débito</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="paypal">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="paypal">
                                             <labe for="paypal">Paypal</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="mercadoPago">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="mercadoPago">
                                             <labe for="mercadoPago">Mercado Pago</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="efectivo">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="efectivo">
                                             <labe for="efectivo">Efectivo</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="transferencia">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="transferencia">
                                             <labe for="transferencia">Transferencia Electrónica</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="depositoTiendas">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="depositoTiendas">
                                             <labe for="depositoTiendas">Depósito en tiendas de conveniencia (Oxxo, 7Eleven, etc.)</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="Otro">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="Otro">
                                             <labe for="Otro">Otro</labe><br>
-                                            <input type="checkbox" id="pago21" name="pago21" class="form-control" value="No">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en internet</labe><br>
                                             </h3>
                                         </tr>
@@ -463,35 +463,35 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="credito">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="credito">
                                             <labe for="ropa">Ropa</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="comida">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="super">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="super">
                                             <labe for="super">Super a domicilio (víveres)</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="muebles">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="muebles">
                                             <labe for="muebles">Muebles y/o electrodomésticos</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="coleccionables">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="coleccionables">
                                             <labe for="coleccionables">Coleccionables</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="libros">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="libros">
                                             <labe for="libros">Libros (físicos o electrónicos)</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="computadoras">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="computadoras">
                                             <labe for="computadoras">Computadoras y/o electrónicos</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="herramienta">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="herramienta">
                                             <labe for="herramienta">Herramientas y ferretería</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="entretenimiento">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="entretenimiento">
                                             <labe for="entretenimiento">Entretenimiento (música, tv, videojuegos, juguetes, etc.)</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="programas">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="programas">
                                             <labe for="programas">Programas o aplicaciones</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="boletos">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="boletos">
                                             <labe for="boletos">Reservaciones y boletos</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="higiene">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="higiene">
                                             <labe for="higiene">Artículos de higiene</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="deportivos">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="deportivos">
                                             <labe for="deportivos">Artículos deportivos</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="otros">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="categoria21" name="categoria21" class="form-control" value="No">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="No">
                                             <labe for="No">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
@@ -579,23 +579,23 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="diabetes">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="diabetes">
                                             <labe for="diabetes">Diabetes</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="hipertension">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="hipertension">
                                             <labe for="hipertension">Hipertensión</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="obesidad">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="obesidad">
                                             <labe for="obesidad">Obesidad</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="asma">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="asma">
                                             <labe for="asma">Asma</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="cardiacas">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="cardiacas">
                                             <labe for="cardiacas">Condiciones Cardíacas</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="inmunodeficiencia">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="inmunodeficiencia">
                                             <labe for="inmunodeficiencia">Inmunodeficiencia</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="hepatitis">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="hepatitis">
                                             <labe for="hepatitis">Hepatitis</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="otros">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed" class="form-control" value="ninguna">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="ninguna">
                                             <labe for="ninguna">Ninguna</labe><br>
                                             </h3>
                                         </tr>
@@ -613,21 +613,21 @@
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="ansiedad">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="ansiedad">
                                             <labe for="ansiedad">Ansiedad</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="estres">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="estres">
                                             <labe for="estres">Estrés</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="depresion">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="depresion">
                                             <labe for="depresion">Depresión</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="deficitAtencion">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="deficitAtencion">
                                             <labe for="deficitAtencion">Déficit de atención</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="bajaLab/Acad">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="bajaLab/Acad">
                                             <labe for="bajaLab/Acad">Baja de rendimiento Laboral /  Académico</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="bajaAutoest">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="bajaAutoest">
                                             <labe for="bajaAutoest">Baja autoestima</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="otros">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
-                                            <input type="checkbox" id="mental" name="mental" class="form-control" value="ninguna">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="ninguna">
                                             <labe for="ninguna">No me he sentido afectado</labe><br>
                                             </h3>
                                         </tr>

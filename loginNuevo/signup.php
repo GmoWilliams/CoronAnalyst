@@ -30,7 +30,7 @@ if(isset($_POST['signup-btn'])) {
         $statement->execute(array(':username' => $username, ':password' => $hashed_password, ':email' => $email));
 
         if($statement->rowCount() == 1) {
-          header('location: ../index.html');
+          header('location: ../index.php');
         }
       }
       catch (PDOException $e) {
