@@ -280,6 +280,8 @@ body {
     color: rgba(255,255,255,0.6);
     position: relative;
 }
+
+
 .inner .form-row .form-holder select option {
 	background: #fff;
 	color: #000;
@@ -335,7 +337,23 @@ body {
 	font-weight: 600;
 	color: #fff;
 	margin: 0 0 11px;
+	vertical-align: middle;
+    position: relative;
+    bottom: 1px;
 }
+.inner checkbox {
+	vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+.innercheckbox {
+  float: left;
+  margin: 0 0 0 17px;
+  width: 13px;
+  height: 13px;
+}
+
 .inner .form-row.table-responsive {
     border: none;
     border-radius: 5px;
@@ -358,6 +376,13 @@ body {
 .inner .table-responsive tr.space-row > th {
 	padding-bottom: 18px;
 }
+
+.inner .table-responsive tr.space-row > checkbox {
+	color: rgba(255,255,255,0.6);
+	font-size: 16px;
+	font-weight: 400;
+}
+
 .inner .table-responsive tbody th {
 	color: rgba(255,255,255,0.6);
 	font-size: 16px;
