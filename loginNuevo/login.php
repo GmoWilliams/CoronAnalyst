@@ -21,7 +21,17 @@ if(isset($_POST['login-btn'])) {
         if(password_verify($password, $hashed_password)) {
           $_SESSION['id'] = $id;
           $_SESSION['username'] = $username;
+          
+          //header('location: index.html');
+          
+          if ($SQLQuery2 = "SELECT COUNT(*) FROM users)" > 0){
           header('location: dashboard.php');
+          }
+
+          else {
+          header('location: index.html');
+          }
+          
         }
         else {
           

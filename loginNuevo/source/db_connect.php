@@ -2,7 +2,7 @@
 
 $username = 'root';
 $password = '';
-$dsn = 'mysql:host=localhost; dbname=reto_prueba';
+$dsn = 'mysql:host=localhost; dbname=andres';
 
 try {
   // Php Data Objects
