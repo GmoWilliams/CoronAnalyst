@@ -29,9 +29,18 @@ if(isset($_POST['signup-btn'])) {
         $statement = $conn->prepare($SQLInsert);
         $statement->execute(array(':username' => $username, ':password' => $hashed_password, ':email' => $email));
 
+        $idUsuario = mysqli_query($db, "SELECT id FROM users WHERE email = '$email';");
+                    $result = mysqli_fetch_array($idUsuario);
+                    $_SESSION['id'] = $result['id'];
+
         if($statement->rowCount() == 1) {
+
           header('location: ../index.php');
+
         }
+
+        //session_start();
+
       }
       catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
