@@ -4,7 +4,7 @@ $username = 'root';
 $password = '';
 $dsn = 'mysql:host=localhost; dbname=pruebas';
 
-$db = mysqli_connect ("localhost", "root", "", "andres");
+$db = mysqli_connect ("localhost", "root", "", "pruebas");
 
 try {
   // Php Data Objects

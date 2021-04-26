@@ -2,7 +2,7 @@
 
 require_once 'source/session.php';
 require_once 'source/db_connect.php';
-$_SESSION_start();
+//$_SESSION_start();
 
 if(isset($_POST['login-btn'])) {
 
@@ -25,7 +25,7 @@ if(isset($_POST['login-btn'])) {
           
           //header('location: index.html');
           
-          if ($SQLQuery2 = "SELECT COUNT(*) FROM users)" > 0){
+          if ($SQLQuery2 = "SELECT COUNT(*) FROM respuestas WHERE users_id = $id)" > 0){
           header('location: dashboard.php');
           }
 

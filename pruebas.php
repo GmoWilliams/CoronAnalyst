@@ -81,20 +81,20 @@
     $checkbox9 = $_POST['plataforma20'];
     echo $checkbox9;
         for ($i=0; $i<sizeof($checkbox9); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox9[$i]."', 'plataforma20', 9 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox9[$i]."', '".$_SESSION["id"]."', 9 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     
     $checkbox10 = $_POST['pago20'];
     echo $checkbox10;
         for ($i=0; $i<sizeof($checkbox10); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox10[$i]."', 'pago20', 10 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox10[$i]."', '".$_SESSION["id"]."', 10 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     $checkbox11 = $_POST['categoria20'];
     echo $checkbox11;
         for ($i=0; $i<sizeof($checkbox11); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox11[$i]."', 'categoria20', 11 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox11[$i]."', '".$_SESSION["id"]."', 11 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     
@@ -114,19 +114,19 @@
     $checkbox14 = $_POST['plataforma21'];
     echo $checkbox14;
         for ($i=0; $i<sizeof($checkbox14); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox14[$i]."', 'plataforma21', 14 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox14[$i]."', '".$_SESSION["id"]."', 14 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     $checkbox15 = $_POST['pago21'];
     echo $checkbox15;
         for ($i=0; $i<sizeof($checkbox15); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox15[$i]."', 'pago21', 15 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox15[$i]."', '".$_SESSION["id"]."', 15 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     $checkbox16 = $_POST['categoria21'];
     echo $checkbox16;
         for ($i=0; $i<sizeof($checkbox16); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox16[$i]."', 'categoria21', 16 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox16[$i]."', '".$_SESSION["id"]."', 16 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     
@@ -138,13 +138,13 @@
     $checkbox21 = $_POST['condicionMed'];
     echo $checkbox21;
         for ($i=0; $i<sizeof($checkbox21); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox21[$i]."', 'condicionMed', 21 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox21[$i]."', '".$_SESSION["id"]."', 21 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
     $checkbox22 = $_POST['mental'];
     echo $checkbox22;
         for ($i=0; $i<sizeof($checkbox22); $i++) {
-            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox22[$i]."', 'mental', 22 ) ";
+            $query = "INSERT INTO respuestas (respuesta, users_id, id_pregunta) VALUES ('".$checkbox22[$i]."', '".$_SESSION["id"]."', 22 ) ";
             mysqli_query($conn, $query) or die(mysqli_error($conn));
         }
 
