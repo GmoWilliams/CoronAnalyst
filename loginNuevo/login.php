@@ -2,6 +2,7 @@
 
 require_once 'source/session.php';
 require_once 'source/db_connect.php';
+$db = mysqli_connect ("localhost", "root", "", "pruebas");
 //$_SESSION_start();
 
 if(isset($_POST['login-btn'])) {
@@ -22,20 +23,21 @@ if(isset($_POST['login-btn'])) {
         if(password_verify($password, $hashed_password)) {
           $_SESSION['id'] = $id;
           $_SESSION['username'] = $username;
-          
+
           //header('location: index.html');
-          
-          if ($SQLQuery2 = "SELECT COUNT(*) FROM respuestas WHERE users_id = $id)" > 0){
-          header('location: dashboard.php');
+
+          $query = mysqli_query($db, "SELECT * FROM respuestas WHERE users_id = '$id' ");
+          if (mysqli_num_rows($query) > 0){
+          header('location: ../dashboard.html');
           }
 
           else {
-          header('location: index.html');
+          header('location: ../index.php');
           }
-          
+
         }
         else {
-          
+
           //echo "Error: Nombre de usuario o contrasenia invalida. Por favor regrese y vuelva a ingresar las credenciales";
           echo "<script>
           alert('Error: Nombre de usuario o contrasenia invalida. Por favor regrese y vuelva a ingresar las credenciales');
