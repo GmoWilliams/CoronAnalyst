@@ -42,6 +42,35 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         chart.draw(data, options);
+
+        
+        var data2 = null;
+        if (stats != "error") {
+            data2 = google.visualization.arrayToDataTable([
+            ['Plataforma', 'Frecuencia'],
+            ['Amazon', stats.amazon],
+            ['Mercado Libre', stats.mercado],
+            ['Facebook Marketplace', stats.fb],
+            ['Alibaba', stats.alibaba],
+            ['eBay', stats.ebay],
+            ['eShop', stats.eshop],
+            ['Otros', stats.otros],
+            ['No usan plataformas en linea', stats.noPlataforma]
+            ]);
+        }
+
+        var options = {
+          title: 'Preferencia sobre compras en linea o presenciales'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data2, options);
+
+
+
+
+
       }
     </script>
   </head>

@@ -102,7 +102,7 @@ echo $_SESSION['id'];
                                             selecciona el que estás cursando)</label>
                                         <select name="estudios" id="estudios" class="form-control">
                                             <option value="" selected> </option>
-                                            <option value="no">No aplica</option>
+                                            <option value="noEducacion">No aplica</option>
                                             <option value="primaria">Primaria</option>
                                             <option value="secundaria">Secundaria</option>
                                             <option value="prepa">Preparatoria/Bachillerato</option>
@@ -231,7 +231,7 @@ echo $_SESSION['id'];
                                             <option value="6a10">6 a 10 veces al mes</option>
                                             <option value="+10">Más de 10 veces al mes</option>
                                             <option value="1enMeses">1 vez cada varios meses</option>
-                                            <option value="No">No realizaba compras en línea</option>
+                                            <option value="noFrecuencia">No realizaba compras en línea</option>
                                         </select>
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
                                             <input type="checkbox" id="plataforma20" name="plataforma20[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en línea</labe><br>
+                                            <labe for="noPlataforma">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -296,7 +296,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="Otro">
                                             <labe for="Otro">Otro</labe><br>
                                             <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en internet</labe><br>
+                                            <labe for="noMetodo">No realizaba compras en internet</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -342,7 +342,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
                                             <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en línea</labe><br>
+                                            <labe for="noPlataforma">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -386,7 +386,7 @@ echo $_SESSION['id'];
                                             <option value="6a10">6 a 10 veces al mes</option>
                                             <option value="+10">Más de 10 veces al mes</option>
                                             <option value="1enMeses">1 vez cada varios meses</option>
-                                            <option value="No">No realizaba compras en línea</option>
+                                            <option value="noCompras">No realizaba compras en línea</option>
                                         </select>
                                     </div>
                                 </div>
@@ -417,7 +417,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
                                             <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en línea</labe><br>
+                                            <labe for="noPlataforma">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -451,7 +451,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="Otro">
                                             <labe for="Otro">Otro</labe><br>
                                             <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en internet</labe><br>
+                                            <labe for="noMetodo">No realizaba compras en internet</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -497,7 +497,7 @@ echo $_SESSION['id'];
                                             <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="otros">
                                             <labe for="otros">Otros</labe><br>
                                             <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="No">
-                                            <labe for="No">No realizaba compras en línea</labe><br>
+                                            <labe for="noCategoria">No realizaba compras en línea</labe><br>
                                             </h3>
                                         </tr>
                                     </tbody>
@@ -567,7 +567,7 @@ echo $_SESSION['id'];
                                         <select name="sintomas" id="sintomas" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="Si">Sí</option>
-                                            <option value="No">No</option>
+                                            <option value="NoSintomas">No</option>
                                         
                                         </select>
                                     </div>
