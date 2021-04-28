@@ -5,7 +5,12 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawBarChart);
+      google.charts.setOnLoadCallback(drawBarCat);
+
 
       // Llama el servicio web de forma síncrona
       function llamarws() {
@@ -43,7 +48,13 @@
 
         chart.draw(data, options);
 
-        
+      }
+
+
+      function drawChart2() {
+      var stats = llamarws();
+      console.log("Regresa:");
+      console.log(stats);
         var data2 = null;
         if (stats != "error") {
             data2 = google.visualization.arrayToDataTable([
@@ -60,13 +71,67 @@
         }
 
         var options = {
-          title: 'Preferencia sobre compras en linea o presenciales'
+          title: 'Plataformas más usadas para comprar en línea'
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
         chart.draw(data2, options);
+      }
 
+
+      function drawBarChart() {
+        var stats = llamarws();
+        var data = google.visualization.arrayToDataTable([
+          ['Frecuencia', '2020', '2021'],
+          ['No compro en línea', stats.freq520, stats.freq521],
+          ['1 vez cada varios meses ', stats.freq420, stats.freq421],
+          ['1 - 5 veces al mes', stats.freq120, stats.freq121],
+          ['6 - 10 veces al mes', stats.freq220, stats.freq221],
+          ['+10 veces al mes', stats.freq320, stats.freq321]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Frecuencia de compras en linea',
+            subtitle: 'Antes de la pandemia vs. durante la pandemia',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      function drawBarCat() {
+        var stats = llamarws();
+        var data = google.visualization.arrayToDataTable([
+          ['Categoría', '2020', '2021'],
+          ['Ropa', stats.ropa20, stats.ropa21],
+          ['Comida', stats.comida20, stats.comida21],
+          ['Super', stats.super20, stats.super21],
+          ['Muebles', stats.muebles20, stats.muebles21],
+          ['Coleccionables', stats.colec20, stats.colec21],
+          ['Libros', stats.libros20, stats.libros21],
+          ['Computadoras', stats.compu20, stats.compu21],
+          ['Herramientas', stats.herra20, stats.herra21],
+          ['Entretenimiento', stats.entret20, stats.entret21],
+          ['Apps', stats.progra20, stats.progra21],
+          ['Boletos', stats.boletos20, stats.boletos21],
+          ['Higiene', stats.higiene20, stats.higiene21],
+          ['Deportivos', stats.deportivos20, stats.deportivos21],
+          ['Otros', stats.otros20, stats.otros21]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Frecuencia de compras en linea',
+            subtitle: 'Antes de la pandemia vs. durante la pandemia',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material2'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
       }
 
 
@@ -75,5 +140,11 @@
   </head>
   <body>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div id="piechart2" style="width: 900px; height: 500px;"></div>
+    <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
+    <div id="columnchart_material2" style="width: 1500px; height: 500px;"></div>
+
+
+
   </body>
 </html>

@@ -313,7 +313,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="credito">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="ropa">
                                             <labe for="ropa">Ropa</labe><br>
                                             <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
@@ -386,7 +386,7 @@ echo $_SESSION['id'];
                                             <option value="6a10">6 a 10 veces al mes</option>
                                             <option value="+10">Más de 10 veces al mes</option>
                                             <option value="1enMeses">1 vez cada varios meses</option>
-                                            <option value="noCompras">No realizaba compras en línea</option>
+                                            <option value="noFrecuencia">No realizaba compras en línea</option>
                                         </select>
                                     </div>
                                 </div>
@@ -468,7 +468,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="credito">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="ropa">
                                             <labe for="ropa">Ropa</labe><br>
                                             <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
