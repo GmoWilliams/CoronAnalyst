@@ -34,6 +34,8 @@
     $result9 = mysqli_num_rows($query9);
     $query10 = mysqli_query($db, "SELECT * FROM respuestas WHERE respuesta = 'noPlataforma' and id_pregunta = 14");
     $result10 = mysqli_num_rows($query10);
+    $query11 = mysqli_query($db, "SELECT * FROM users");
+    $result11 = mysqli_num_rows($query11);
 
 
 
@@ -41,7 +43,7 @@
 
 
     $stats = array("linea" => $result1, "fisico" => $result2, "amazon" => $result3, "mercado"=>$result4, "fb"=>$result5,
-     "alibaba"=>$result6, "ebay"=>$result7, "eshop"=>$result8, "otros"=>$result9, "noPlataforma"=>$result10);
+     "alibaba"=>$result6, "ebay"=>$result7, "eshop"=>$result8, "otros"=>$result9, "noPlataforma"=>$result10, "totalSample"=>$result11, "answered"=>30, "notAnswered"=>9);
     
 
 
