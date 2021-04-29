@@ -248,7 +248,7 @@ include_once 'loginNuevo/source/session.php';
 			<br>
 			<table>
 				<tr>
-					<td><div id="piechart" style="width: 650px; height: 450px;"></div></td>
+					<td><div id="piechart" style="width: 610px; height: 450px;"></div></td>
 					<td><div id="columnchart_material" style="width: 800px; height: 400px;"></div></td>
 				</tr>
 			</table>
