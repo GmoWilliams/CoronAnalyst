@@ -41,7 +41,7 @@ include_once 'loginNuevo/source/session.php';
       // Llama el servicio web de forma síncrona
       function llamarws() {
             let xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "http://localhost/codigosRorros/cogidosRorros_/frecuencia.php", false);
+            xmlhttp.open("GET", "http://localhost/encuestaFuncional/codigosRorros_/frecuencia.php", false);
             xmlhttp.send();
             if (xmlhttp.status === 200) {
                 let myObj = JSON.parse(xmlhttp.responseText);
@@ -68,7 +68,9 @@ include_once 'loginNuevo/source/session.php';
 
         var options = {
           title: 'Preferencia sobre compras en linea o presenciales',
-		  colors: ['#24C2C2', '#FCB306']
+		  colors: ['#24C2C2', '#FCB306'],
+		  
+    	  
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
