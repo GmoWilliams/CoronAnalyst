@@ -1,0 +1,56 @@
+<!-- https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/piechart.html -->
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function llamarws() {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "http://localhost/codigosRorros/cogidosRorros_/frecuencia.php", false);
+            xmlhttp.send();
+            if (xmlhttp.status === 200) {
+                let myObj = JSON.parse(xmlhttp.responseText);
+                return myObj;
+            } else {
+                return "error";
+            }
+      }
+
+
+        
+    function drawChart() {
+        var stats = llamarws();
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Cantidad de compras a la semana');
+        data.addColumn('number', '2020');
+        data.addColumn('number', '2021');
+
+        data.addRows([
+        [1,  stats.freq120, stats.freq121],
+        [2,  stats.freq220, stats.freq221],
+        [3,  stats.freq320, stats.freq321],
+        [4,  stats.freq420, stats.freq421],
+        [5,  stats.freq520, stats.freq521]
+        ]);
+
+        var options = {
+        chart: {
+            title: 'Frecuencia de compras en línea'
+                },
+        width: 900,
+        height: 500
+        };
+
+        var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+        chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+    </script>
+  </head>
+  <body>
+    <div id="linechart_material" style="width: 900px; height: 500px;"></div>
+</body>
+</html>
