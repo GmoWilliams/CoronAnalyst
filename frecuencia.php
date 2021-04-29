@@ -129,6 +129,23 @@
     $result51 = mysqli_num_rows($query51);
 
 
+    //cuanto dinero gasta
+    $query52 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '-1000'and id_pregunta = '18'");
+    $result52 = mysqli_num_rows($query52);
+    $query53 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '1000a2500'and id_pregunta = '18'");
+    $result53 = mysqli_num_rows($query53);
+    $query54 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '2500a5000'and id_pregunta = '18'");
+    $result54 = mysqli_num_rows($query54);
+    $query55 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '5000a7500'and id_pregunta = '18'");
+    $result55 = mysqli_num_rows($query55);
+    $query56 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '7500a10000'and id_pregunta = '18'");
+    $result56 = mysqli_num_rows($query56);
+    $query57 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = '10000'and id_pregunta = '18'");
+    $result57 = mysqli_num_rows($query57);
+    
+
+
+
 
 
 
@@ -143,7 +160,8 @@
     "freq120"=>$result14, "freq220"=>$result15, "freq320"=>$result16, "freq420"=>$result17, "freq520"=>$result18,
     "freq121"=>$result19, "freq221"=>$result20, "freq321"=>$result21, "freq421"=>$result22, "freq521"=>$result23,
     "ropa20"=>$result24, "comida20"=>$result25, "super20"=>$result26, "muebles20"=>$result27, "colec20"=>$result28, "libros20"=>$result29, "compu20"=>$result30, "herra20"=>$result31, "entret20"=>$result32, "progra20"=>$result33, "boletos20"=>$result34, "higiene20"=>$result35, "deportivos20"=>$result36, "otros20"=>$result37,
-    "ropa21"=>$result38, "comida21"=>$result39, "super21"=>$result40, "muebles21"=>$result41, "colec21"=>$result42, "libros21"=>$result43, "compu21"=>$result44, "herra21"=>$result45, "entret21"=>$result46, "progra21"=>$result47, "boletos21"=>$result48, "higiene21"=>$result49, "deportivos21"=>$result50, "otros21"=>$result51);
+    "ropa21"=>$result38, "comida21"=>$result39, "super21"=>$result40, "muebles21"=>$result41, "colec21"=>$result42, "libros21"=>$result43, "compu21"=>$result44, "herra21"=>$result45, "entret21"=>$result46, "progra21"=>$result47, "boletos21"=>$result48, "higiene21"=>$result49, "deportivos21"=>$result50, "otros21"=>$result51,
+    "gasto1"=>$result52, "gasto2"=>$result53, "gasto3"=>$result54, "gasto4"=>$result55, "gasto5"=>$result56, "gasto6"=>$result57);
     
 
     $myJSON = json_encode($stats);

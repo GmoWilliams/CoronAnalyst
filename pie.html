@@ -8,6 +8,7 @@
       google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawChart3);
       google.charts.setOnLoadCallback(drawBarChart);
       google.charts.setOnLoadCallback(drawBarCat);
 
@@ -79,6 +80,32 @@
       }
 
 
+      function drawChart3() {
+      var stats = llamarws();
+      console.log("Regresa:");
+      console.log(stats);
+        var data2 = null;
+        if (stats != "error") {
+            data2 = google.visualization.arrayToDataTable([
+            ['Plataforma', 'Frecuencia'],
+            ['Menos de $1,000', stats.gasto1],
+            ['Entre $1,000 y $2,500', stats.gasto2],
+            ['Entre $2,500 y $5,000', stats.gasto3],
+            ['Entre $5,000 y $7,500', stats.gasto4],
+            ['Entre $7,500 y $10,000', stats.gasto5],
+            ['Más de $10,000', stats.gasto6]
+            ]);
+        }
+
+        var options = {
+          title: 'Gasto en compras en línea al mes'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+        chart.draw(data2, options);
+      }
+
+
       function drawBarChart() {
         var stats = llamarws();
         var data = google.visualization.arrayToDataTable([
@@ -141,6 +168,7 @@
   <body>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
     <div id="piechart2" style="width: 900px; height: 500px;"></div>
+    <div id="piechart3" style="width: 900px; height: 500px;"></div>
     <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
     <div id="columnchart_material2" style="width: 1500px; height: 500px;"></div>
 
