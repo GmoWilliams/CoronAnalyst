@@ -39,7 +39,7 @@ include_once 'loginNuevo/source/session.php';
       // Llama el servicio web de forma síncrona
       function llamarws() {
             let xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "http://localhost/encuestaFuncional/codigosRorros_/frecuencia.php", false);
+            xmlhttp.open("GET", "http://localhost/codigosRorros/cogidosRorros_/frecuencia.php", false);
             xmlhttp.send();
             if (xmlhttp.status === 200) {
                 let myObj = JSON.parse(xmlhttp.responseText);
@@ -248,15 +248,27 @@ include_once 'loginNuevo/source/session.php';
 			<br>
 			<table>
 				<tr>
-					<td><div id="piechart" style="width: 500px; height: 370px;"></div></td>
-					<td><div id="columnchart_material" style="width: 800px; height: 370px;"></div></td>
-					<td><div id="donutchart" style="width: 500px; height: 370px;"></div></td>
+					<td><div id="piechart" style="width: 650px; height: 450px;"></div></td>
+					<td><div id="columnchart_material" style="width: 800px; height: 400px;"></div></td>
 				</tr>
 			</table>
+      <br>
+      <br>
+    	<br>
+	    <br>
+      <br>
+      <table>
+				<tr>
+        <td><div id="columnchart_material2" style="width: 1400px; height: 450px; position: center;"></div></td>
+				</tr>
+			</table>
+      <br>
+      <br>
+      <br>
 			<table>
 				<tr>
-					<td><div id="columnchart_material2" style="width: 1000px; height: 370px;"></div></td>
-					<td><div id="piechart2" style="width: 800px; height: 370px;"></div></td>
+        <td><div id="donutchart" style="width: 745px; height: 400px;"></div></td>
+					<td><div id="piechart2" style="width: 745px; height: 400px;"></div></td>
 				</tr>
 			</table>
 			<br>
