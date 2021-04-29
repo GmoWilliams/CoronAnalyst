@@ -11,8 +11,10 @@
 <body>
 
     <section class="top-section">
-        <link href="loginNuevo/css/welcome2.css" rel="stylesheet" type="text/css">
-        <img src="loginNuevo/img/logo-new.png" class="img-logo" alt="">
+        <div id="contenedor">
+            <link href="loginNuevo/css/welcome2.css" rel="stylesheet" type="text/css">
+            <img src="loginNuevo/img/logo-new.png" class="img" alt="">
+        </div>
     </section>
 
     <div class="top-section">
@@ -23,13 +25,14 @@
 
     <div>
     <section class="left-section">
-        <div id="left-cover" class="cover cover-hide">
-            <img src="loginNuevo/img/cover.png" alt="">
-            <h1>¡Bienvenido!</h1>
-            <h3>¿Ya estás registrado en Corona-Analyst?</h3>
+        <div id="left-cover" class="cover cover-hide" style="font-size:1.5vw;">
+            <link href="loginNuevo/css/welcome2.css" rel="stylesheet" type="text/css">
+            <img src="loginNuevo/img/cover.png" class="img-blueNwhite" alt="">
+            <h1 >¡Bienvenido!</h1>
+            <h3>¿Ya estás registrado?</h3>
             <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
         </div>
-        <div id="left-form" class="form fade-in-element">
+        <div id="left-form" class="form fade-in-element" style="font-size:1.5vw;">
             <h1>Login</h1>
             <form action="loginNuevo/login.php" method="post">
                 <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario" pattern = "[A-Za-z0-9]+" required>
@@ -40,13 +43,14 @@
     </section>
 
     <section class="right-section">
-        <div id="right-cover" class="cover fade-in-element">
-            <img src="loginNuevo/img/cover.png" alt="">
+        <div id="right-cover" class="cover fade-in-element" style="font-size:1.5vw;">
+            <link href="loginNuevo/css/welcome2.css" rel="stylesheet" type="text/css">
+            <img src="loginNuevo/img/cover.png" alt="" class="img-blueNwhite">
             <h1>¡Bienvenido!</h1>
             <h3>¿No te has registrado?</h3>
             <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
         </div>
-        <div id="right-form" class="form form-hide">
+        <div id="right-form" class="form form-hide" style="font-size:1.5vw;">
             <h1>Signup</h1>
             <form action="loginNuevo/signup.php" method="post">
                 <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario" pattern = "[A-Za-z0-9]+" required>
@@ -62,9 +66,9 @@
     <section class = "bottom">
         <br>
         <h2> Sobre nosotros</h2>
-    <img src="loginNuevo/img/fotos.png" >
+    <img src="loginNuevo/img/fotos.png" class="img-fotos">
     <br>
-        <body > Somos un grupo de estudiantes del Tecnológico de Monterrey <br>
+        <body style="font-size:1.5vw;"> Somos un grupo de estudiantes del Tecnológico de Monterrey <br>
             trabajando en conjunto con PK Global para crear un sitio web para <br>
             analizar el impacto que ha tenido el COVID-19 y aplicar el conocimiento <br>
             que hemos adquirido a lo largo del semestre <br>

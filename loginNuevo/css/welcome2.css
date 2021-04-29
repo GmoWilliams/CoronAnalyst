@@ -1,6 +1,24 @@
-.img-logo {
-    width:210vh;
-    height:120vh;
+header, #contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+.img {
+    max-width:100%;
+    width:1475px;
+   } 
+
+.img-blueNwhite {
+    max-width:100%;
+    width:675px;
+    resize: vertical;
+
+   } 
+.img-fotos {
+    max-width:100%;
+    width:675px;
+    /*height:120vh;*/
+
    } 
 
 * {
@@ -19,16 +37,16 @@ body {
 
 /* Input boxes Register*/
 .form input {
-    min-width: 400px;
+    min-width: 40vw;
     display: block;
     margin: 20px;
     padding: 15px 20px;
     background-color: #ece7e7;
-    font-size: 20px;
-    top: 850px;
+    font-size: 1.5vw;
+    top: 60vw;
     border: none;
     outline: none;
-    font-size: 22px;
+    /*font-size: 22px;*/
     box-shadow: 15px 15px 25px #a8a8a8;
     transition: box-shadow 0.5s;
 }
@@ -39,6 +57,11 @@ body {
 
 /* Yellow Button */
 .form .btn {
+    /*
+    position: absolute;
+    top: 2vh;
+    margin: 70vw;
+    */
     margin: auto;
     padding: 10px 35px;
     background-color: #FCB306;
@@ -63,7 +86,7 @@ body {
     height: 50vh;
     width: 50vw;
     position: absolute;
-    top: 750px;
+    top: 50vw;
     font-size: 35px;
 }
 
@@ -80,7 +103,7 @@ body {
 
 .cover .switch-btn {
     position: absolute;
-    top: 920px;
+    top: 65vw;
     font-size: 25px;
     margin: 40vh auto;
     padding: 10px 55px;
@@ -113,10 +136,11 @@ body {
 
 .left-section .cover h1 {
     position: absolute;
-    top: 650px;
-    margin: 60vh auto;
-    color: rgb(9, 199, 202);
-    font-size: 50px;
+    top: 2vh;
+    
+    margin: 60vw ;
+    color: #fff;
+    font-size: 3vw;
 }
 
 .bottom {
@@ -127,10 +151,10 @@ body {
 
 .left-section .cover h3 {
     position: absolute;
-    top: 720px;
-    margin: 50vh auto;
+    top: 2vh;
+    margin: 70vw ;
     color: #fff;
-    font-size: 35px;
+    font-size: 2vw;
 }
 
 
@@ -157,18 +181,20 @@ body {
 
 .right-section .cover h1 {
     position: absolute;
-    top: 550px;
-    margin: 60vh auto;
+    top: 2vh;
+    
+    
+    margin: 60vw ;
     color: #fff;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .right-section .cover h3 {
     position: absolute;
-    top: 720px;
-    margin: 50vh auto;
+    top: 2vh;
+    margin: 70vw ;
     color: #fff;
-    font-size: 35px;
+    font-size: 2vw;
 }
 
 .right-section .cover-hide {
