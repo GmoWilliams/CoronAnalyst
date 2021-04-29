@@ -32,6 +32,9 @@ if(isset($_POST['signup-btn'])) {
         $idUsuario = mysqli_query($db, "SELECT id FROM users WHERE email = '$email';");
                     $result = mysqli_fetch_array($idUsuario);
                     $_SESSION['id'] = $result['id'];
+        $username = mysqli_query($db, "SELECT username FROM users WHERE email = '$email';");
+                    $result2 = mysqli_fetch_array($username);
+                    $_SESSION['username'] = $result2['username'];
 
         if($statement->rowCount() == 1) {
 

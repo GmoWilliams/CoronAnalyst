@@ -28,7 +28,7 @@ if(isset($_POST['login-btn'])) {
 
           $query = mysqli_query($db, "SELECT * FROM respuestas WHERE users_id = '$id' ");
           if (mysqli_num_rows($query) > 0){
-          header('location: ../dashboard.html');
+          header('location: ../dashboard.php');
           }
 
           else {

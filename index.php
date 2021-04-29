@@ -1,6 +1,7 @@
 <?php
 session_start();
 echo $_SESSION['id'];
+echo $_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="gender">1. Seleccione el sexo con el que se identifique*</label>
-                                        <select name="gender" id="gender" class="form-control">
+                                        <select name="gender" id="gender" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="h">Hombre</option>
                                             <option value="m">Mujer</option>
@@ -58,7 +59,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="edad">2. Seleccione su rango de edad*</label>
-                                        <select name="edad" id="edad" class="form-control">
+                                        <select name="edad" id="edad" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="15">Menos de 15 años</option>
                                             <option value="20">15 - 20</option>
@@ -82,7 +83,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="estadoC">3. Cuál es su estado civil?*</label>
-                                        <select name="estadoC" id="estadoC" class="form-control">
+                                        <select name="estadoC" id="estadoC" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="soltero">Soltero</option>
                                             <option value="casado">Casado</option>
@@ -100,7 +101,7 @@ echo $_SESSION['id'];
                                     <div class="form-holder form-holder-2">
                                         <label for="estudios">4. Cuál es su nivel de estudios?* (Si eres estudiante
                                             selecciona el que estás cursando)</label>
-                                        <select name="estudios" id="estudios" class="form-control">
+                                        <select name="estudios" id="estudios" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="noEducacion">No aplica</option>
                                             <option value="primaria">Primaria</option>
@@ -118,7 +119,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="ocupacion">5. Cuál es su ocupación?*</label>
-                                        <select name="ocupacion" id="ocupacion" class="form-control">
+                                        <select name="ocupacion" id="ocupacion" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="industrial">Sector Industrial</option>
                                             <option value="educativo">Sector Educativo</option>
@@ -149,7 +150,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="ingresos">6. Cuál es su ingreso económico mensual?*</label>
-                                        <select name="ingresos" id="ingresos" class="form-control">
+                                        <select name="ingresos" id="ingresos" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="0">No percibo algún salario</option>
                                             <option value="1000">Menos de 1,000</option>
@@ -167,7 +168,7 @@ echo $_SESSION['id'];
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
                                         <label for="estado">7. De qué estado de la república proviene?*</label>
-                                        <select name="estado" id="estado" class="form-control">
+                                        <select name="estado" id="estado" class="form-control" required>
                                             <option value="" selected> </option>
                                             <option value="AGS">Aguascalientes</option>
                                             <option value="BC">Baja California</option>
@@ -279,7 +280,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="credito">
+                                            <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="credito" required>
                                             <labe for="credito">Tarjeta de Crédito</labe><br>
                                             <input type="checkbox" id="pago20" name="pago20[ ]" class="form-control" value="debito">
                                             <labe for="debito">Tarjeta de Débito</labe><br>
@@ -313,7 +314,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="ropa">
+                                            <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="ropa" required>
                                             <labe for="ropa">Ropa</labe><br>
                                             <input type="checkbox" id="categoria20" name="categoria20[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
@@ -402,7 +403,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="amazon">
+                                            <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="amazon" required>
                                             <labe for="amazon">Amazon</labe><br>
                                             <input type="checkbox" id="plataforma21" name="plataforma21[ ]" class="form-control" value="mercadoLibre">
                                             <labe for="mercadoLibre">Mercado Libre</labe><br>
@@ -434,7 +435,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="credito">
+                                            <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="credito" required>
                                             <labe for="credito">Tarjeta de Crédito</labe><br>
                                             <input type="checkbox" id="pago21" name="pago21[ ]" class="form-control" value="debito">
                                             <labe for="debito">Tarjeta de Débito</labe><br>
@@ -468,7 +469,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="ropa">
+                                            <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="ropa" required>
                                             <labe for="ropa">Ropa</labe><br>
                                             <input type="checkbox" id="categoria21" name="categoria21[ ]" class="form-control" value="comida">
                                             <labe for="comida">Comida a domicilio (Rappi, UberEats, etc)</labe><br>
@@ -584,7 +585,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="diabetes">
+                                            <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="diabetes" required>
                                             <labe for="diabetes">Diabetes</labe><br>
                                             <input type="checkbox" id="condicionMed" name="condicionMed[ ]" class="form-control" value="hipertension">
                                             <labe for="hipertension">Hipertensión</labe><br>
@@ -618,7 +619,7 @@ echo $_SESSION['id'];
                                     <tbody>
                                         <tr class="space-row">
                                             <h3>
-                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="ansiedad">
+                                            <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="ansiedad" required>
                                             <labe for="ansiedad">Ansiedad</labe><br>
                                             <input type="checkbox" id="mental" name="mental[ ]" class="form-control" value="estres">
                                             <labe for="estres">Estrés</labe><br>
@@ -655,8 +656,9 @@ echo $_SESSION['id'];
                         
                             </div>
                         
-                        <input type="submit" value="Enviar">
+                        <input class="botoncito" type="submit" value="Enviar" style="font-size:35px;">
                         </section>
+                        
 
                         
                     </div>

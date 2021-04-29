@@ -177,5 +177,5 @@
 
     $conn->close();
 
-    header('location: ./dashboard.html');
+    header('location: ./dashboard.php');
 ?>
