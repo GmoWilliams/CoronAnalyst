@@ -24,8 +24,6 @@ include_once 'loginNuevo/source/session.php';
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="icon" href="loginNuevo/img/icon.png">
 
-
-
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -219,12 +217,13 @@ include_once 'loginNuevo/source/session.php';
 	
 
 </head>
-<?php echo "<h2> Bienvenido al dashboard, ".$_SESSION['username']." </h2>";
+	
+<?php echo "<h2 > Bienvenido al dashboard, ".$_SESSION['username']." </h2>";
      ?>
 <body>
 	<!-- --NavBar -->
 	<nav class="navbar">
-		<div class="brand-title" style="font-size:40px;">CoronaAnalyst</div>
+		<div class="brand-title" >CoronaAnalyst</div>
 		<a href="#" class="toggle-button">
 			<span class="bar"></span>
 			<span class="bar"></span>
@@ -233,15 +232,14 @@ include_once 'loginNuevo/source/session.php';
 		<div class="navbar-links">
 			<ul>
 				<!--<li><a href="#">Home</a></li>-->
-				<li><a href="AboutUs.php" style="font-size:30px;">About Us</a></li>
-				<li><a href="loginNuevo/logout.php" style="font-size:30px;">Log Out</a></li>
+				<li><a href="AboutUs.php" >About Us</a></li>
+				<li><a href="loginNuevo/logout.php" >Log Out</a></li>
 			</ul>
 		</div>
 	</nav>
-	<!-- --NavBar -->
 </body>
-	
 <body>
+	<!-- --NavBar -->
 	<div class="page-content" style="background-image: url('images/mapa.png')">
 	<br>
 	<br>

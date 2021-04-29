@@ -25,7 +25,7 @@
 
 <body>
 	<nav class="navbar">
-		<div class="brand-title" style="font-size:40px;">CoronaAnalyst</div>
+		<div class="brand-title" >CoronaAnalyst</div>
 		<a href="#" class="toggle-button">
 			<span class="bar"></span>
 			<span class="bar"></span>
@@ -34,8 +34,8 @@
 		<div class="navbar-links">
 			<ul>
 				<!--<li><a href="#">Home</a></li>-->
-				<li><a href="dashboard.php" style="font-size:30px;">Dashboard</a></li>
-				<li><a href="loginNuevo/logout.php" style="font-size:30px;">Log Out</a></li>
+				<li><a href="dashboard.php" >Dashboard</a></li>
+				<li><a href="loginNuevo/logout.php" >Log Out</a></li>
 			</ul>
 		</div>
 	</nav>
