@@ -9,6 +9,7 @@
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChart2);
       google.charts.setOnLoadCallback(drawChart3);
+      google.charts.setOnLoadCallback(drawDona);
       google.charts.setOnLoadCallback(drawBarChart);
       google.charts.setOnLoadCallback(drawBarCat);
 
@@ -105,6 +106,23 @@
         chart.draw(data2, options);
       }
 
+      function drawDona() {
+        var stats = llamarws();
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Ha presentado síntomas',     stats.sintomas],
+          ['No ha presentado síntomas',      stats.noSintomas]
+        ]);
+
+        var options = {
+          title: 'Porcentaje de usuarios que han presentado síntomas de COVID-19',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+
 
       function drawBarChart() {
         var stats = llamarws();
@@ -171,6 +189,8 @@
     <div id="piechart3" style="width: 900px; height: 500px;"></div>
     <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
     <div id="columnchart_material2" style="width: 1500px; height: 500px;"></div>
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
+
 
 
 
