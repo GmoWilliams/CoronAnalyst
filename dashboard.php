@@ -215,7 +215,7 @@ include_once 'loginNuevo/source/session.php';
           ['Tarjeta de crédito', stats.credito20, stats.credito21],
           ['Tarjeta de débito', stats.debito20, stats.debito21],
           ['Paypal', stats.paypal20, stats.paypal21],
-          ['Mercado Libre', stats.mercado20, stats.mercado21],
+          ['Mercado Pago', stats.mercado20, stats.mercado21],
           ['Efectivo', stats.efectivo20, stats.efectivo21],
           ['Transferencia', stats.transfer20, stats.transfer21],
           ['Deposito', stats.deposito20, stats.deposito21],
@@ -286,7 +286,7 @@ include_once 'loginNuevo/source/session.php';
             <td><div id="piechart3" style="width: 460px; height: 530px;"></div></td>
           </tr>
         </table>
-        <div id="columnchart_material3" style="width: 1400px; height: 400px; position: center;"></div>
+        <div id="columnchart_material3" style="width: 1400px; height: 520px; position: center;"></div>
         <div>
     </div>
     
