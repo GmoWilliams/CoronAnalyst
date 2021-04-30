@@ -34,7 +34,7 @@ include_once 'loginNuevo/source/session.php';
       google.charts.setOnLoadCallback(drawDona);
       google.charts.setOnLoadCallback(drawBarChart);
       google.charts.setOnLoadCallback(drawBarCat);
-
+      google.charts.setOnLoadCallback(drawBarCat2);
 
       // Llama el servicio web de forma síncrona
       function llamarws() {
@@ -126,7 +126,8 @@ include_once 'loginNuevo/source/session.php';
         }
 
         var options = {
-          title: 'Gasto en compras en línea al mes'
+          title: 'Gasto en compras en línea al mes',
+          colors: ['#24C2C2', '#FCB306', '#6ABBBB', '#4ED6D6', '#D6A93D', '00C2CB']
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
@@ -199,11 +200,35 @@ include_once 'loginNuevo/source/session.php';
         var options = {
           chart: {
             title: 'Frecuencia de compras en linea',
-            subtitle: 'Antes de la pandemia vs. durante la pandemia',
           }
         };
 
         var chart = new google.charts.Bar(document.getElementById('columnchart_material2'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      function drawBarCat2() {
+        var stats = llamarws();
+        var data = google.visualization.arrayToDataTable([
+          ['Método de pago', '2020', '2021'],
+          ['Tarjeta de crédito', stats.credito20, stats.credito21],
+          ['Tarjeta de débito', stats.debito20, stats.debito21],
+          ['Paypal', stats.paypal20, stats.paypal21],
+          ['Mercado Libre', stats.mercado20, stats.mercado21],
+          ['Efectivo', stats.efectivo20, stats.efectivo21],
+          ['Transferencia', stats.transfer20, stats.transfer21],
+          ['Deposito', stats.deposito20, stats.deposito21],
+          ['No uso ningún método', stats.noMetodo20, stats.noMetodo21]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Plataformas de pago más usadas',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material3'));
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
@@ -241,43 +266,30 @@ include_once 'loginNuevo/source/session.php';
 <body>
 	<!-- --NavBar -->
 	<div class="page-content" style="background-image: url('images/mapa.png')">
-	<br>
-	<br>
-	<br>
-		<div class="containerCool">		
-			<br>
-			<table>
-				<tr>
-					<td><div id="piechart" style="width: 610px; height: 450px;"></div></td>
-					<td><div id="columnchart_material" style="width: 800px; height: 400px;"></div></td>
-				</tr>
-			</table>
-      <br>
-      <br>
-    	<br>
-	    <br>
-      <br>
-      <table>
-				<tr>
-        <td><div id="columnchart_material2" style="width: 1400px; height: 450px; position: center;"></div></td>
-				</tr>
-			</table>
-      <br>
-      <br>
-      <br>
-			<table>
-				<tr>
-        <td><div id="donutchart" style="width: 745px; height: 400px;"></div></td>
-					<td><div id="piechart2" style="width: 745px; height: 400px;"></div></td>
-				</tr>
-			</table>
-			<br>
-			<br>
-			<br>
-	  	<div>
-	</div>
+
+      <div class="containerCool">		
+        
+        <table>
+          <tr>
+            <td><div id="piechart" style="width: 610px; height: 450px;"></div></td>
+            <td><div id="columnchart_material" style="width: 800px; height: 400px;"></div></td>
+          </tr>
+        </table>
+        <br>
+          <div id="columnchart_material2" style="width: 1400px; height: 400px; position: center;"></div>
+          <br>
+          <br>
+        <table>
+          <tr>
+            <td><div id="piechart2" style="width: 460px; height: 530px;"></div></td>
+            <td><div id="donutchart" style="width: 460px; height: 530px;"></div></td>
+            <td><div id="piechart3" style="width: 460px; height: 530px;"></div></td>
+          </tr>
+        </table>
+        <div id="columnchart_material3" style="width: 1400px; height: 400px; position: center;"></div>
+        <div>
     </div>
-  </div>
+    
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>

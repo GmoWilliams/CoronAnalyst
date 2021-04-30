@@ -145,15 +145,50 @@
     
 
     //sintomas
-    $query58 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'sintomas'");
+    $query58 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'Si' and id_pregunta = '20' ");
     $result58 = mysqli_num_rows($query58);
     $query59 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'NoSintomas'");
     $result59 = mysqli_num_rows($query59);
 
+    //metodos de pago
+    $query60 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'credito' and id_pregunta = '10'");
+    $result60 = mysqli_num_rows($query60);
+    $query61 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'debito' and id_pregunta = '10'");
+    $result61 = mysqli_num_rows($query61);
+    $query62 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'paypal' and id_pregunta = '10'");
+    $result62 = mysqli_num_rows($query62);
+    $query63 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'mercadoPago' and id_pregunta = '10'");
+    $result63 = mysqli_num_rows($query63);
+    $query64 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'efectivo' and id_pregunta = '10'");
+    $result64 = mysqli_num_rows($query64);
+    $query65 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'transferencia' and id_pregunta = '10'");
+    $result65 = mysqli_num_rows($query65);
+    $query66 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'depositoTiendas' and id_pregunta = '10'");
+    $result66 = mysqli_num_rows($query66);
+    $query67 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'otro' and id_pregunta = '10'");
+    $result67 = mysqli_num_rows($query67);
+    $query68 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'noMetodo' and id_pregunta = '10'");
+    $result68 = mysqli_num_rows($query68);
 
 
-
-
+    $query69 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'credito' and id_pregunta = '15'");
+    $result69 = mysqli_num_rows($query69);
+    $query70 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'debito' and id_pregunta = '15'");
+    $result71 = mysqli_num_rows($query70);
+    $query72 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'paypal' and id_pregunta = '15'");
+    $result72 = mysqli_num_rows($query72);
+    $query73 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'mercadoPago' and id_pregunta = '15'");
+    $result73 = mysqli_num_rows($query73);
+    $query74 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'efectivo' and id_pregunta = '15'");
+    $result74 = mysqli_num_rows($query74);
+    $query75 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'transferencia' and id_pregunta = '15'");
+    $result75 = mysqli_num_rows($query75);
+    $query76 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'depositoTiendas' and id_pregunta = '15'");
+    $result76 = mysqli_num_rows($query76);
+    $query77 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'otro' and id_pregunta = '15'");
+    $result77 = mysqli_num_rows($query77);
+    $query78 = mysqli_query($db, "SELECT * FROM respuestas where respuesta = 'noMetodo' and id_pregunta = '15'");
+    $result78 = mysqli_num_rows($query78);
 
 
 
@@ -166,7 +201,9 @@
     "ropa20"=>$result24, "comida20"=>$result25, "super20"=>$result26, "muebles20"=>$result27, "colec20"=>$result28, "libros20"=>$result29, "compu20"=>$result30, "herra20"=>$result31, "entret20"=>$result32, "progra20"=>$result33, "boletos20"=>$result34, "higiene20"=>$result35, "deportivos20"=>$result36, "otros20"=>$result37,
     "ropa21"=>$result38, "comida21"=>$result39, "super21"=>$result40, "muebles21"=>$result41, "colec21"=>$result42, "libros21"=>$result43, "compu21"=>$result44, "herra21"=>$result45, "entret21"=>$result46, "progra21"=>$result47, "boletos21"=>$result48, "higiene21"=>$result49, "deportivos21"=>$result50, "otros21"=>$result51,
     "gasto1"=>$result52, "gasto2"=>$result53, "gasto3"=>$result54, "gasto4"=>$result55, "gasto5"=>$result56, "gasto6"=>$result57,
-    "sintomas"=>$result58, "noSintomas"=>$result59);
+    "sintomas"=>$result58, "noSintomas"=>$result59,
+    "credito20"=>$result60, "debito20"=>$result61, "paypal20"=>$result62, "mercado20"=>$result63, "efectivo20"=>$result64, "transfer20"=>$result65, "deposito20"=>$result66, "otro20"=>$result67, "noMetodo20"=>$result68, 
+    "credito21"=>$result69, "debito21"=>$result71, "paypal21"=>$result72, "mercado21"=>$result73, "efectivo21"=>$result74, "transfer21"=>$result75, "deposito21"=>$result76, "otro21"=>$result77, "noMetodo21"=>$result78);
     
 
     $myJSON = json_encode($stats);
