@@ -1,2 +1,3 @@
-This template was made by Colorlib (https://colorlib.com)
-Please visit our website for more awesome templates, themes and tools. 
+Somos un grupo de estudiantes del Tecnológico de Monterrey trabajando en colaboración con PK Global para crear un sitio web que sea capaz de analizar el impacto que ha tenido el COVID-19 en los hábitos de compra de la población a lo largo de este año, por medio de una encuesta que se registra en una base de datos para posteriormente analizar esos resultados y desplegarlos en forma de gráficas dinámicas en el Dashboard dentro del sitio web.
+
+We are a group of students from Tecnológico de Monterrey working in collaboration with PK Global to create a website that is capable of analyzing the impact that COVID-19 has had on the purchasing habits of the population throughout this year, for means of a survey that is registered in a database to later analyze these results and display them in the form of dynamic graphs within the Dashboard on the website.
